@@ -1,0 +1,16 @@
+print('\n'*3)
+print('\t\tЗадача 2')
+print('*'*56)
+print('  Напишите программу для проверки истинности утверждения\n\t\t\033[1;30;47m¬(X \/ Y \/ Z) = ¬X ⋀ ¬Y ⋀ ¬Z (1)\033[0;0m\nдля всех значений предиката.\n') 
+print('  Для обозначения истинности введите любой символ\nдля обозначения ложности не вводите ничего\nДля продолжения нажмите Enter')
+X = bool(input('X '))
+Y = bool(input('Y '))
+Z = bool(input('Z '))
+print(f'X = {X}, Y = {Y}, Z = {Z}')
+statement1 = not(X or Y or Z)
+statement2 = not X and not Y and not Z
+if statement1 == statement2:
+  print('\033[3;32mУтверждение (1) истинно!\033[0m\n')
+else: ('\033[3;31mУтверждение (1) ложно!\033[0m\n')
+print('*'*56)
+print('\n'*3)
